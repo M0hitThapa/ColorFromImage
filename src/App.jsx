@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ImageShow from "./components/ImageShow";
-import { Upload } from "lucide-react";
+import { Star, Upload } from "lucide-react";
 import ColorThief from "colorthief";
 
 const gallery = <i className="fas fa-images"></i>;
@@ -29,7 +29,9 @@ export default function Home() {
   };
 
   return (
+    
     <div className="bg-black min-h-screen flex flex-col">
+      <a className = "flex text-lg justify-end items-end p-10 text-white" href="https://github.com/M0hitThapa/ColorFromImage.git"><Star className=" fill-yellow-500" />github</a>
       <header className="absolute flex flex-col top-14 left-1/2 transform -translate-x-1/2 text-center">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl font-bold text-yellow-400">
           Transform Your Image Into{" "}
